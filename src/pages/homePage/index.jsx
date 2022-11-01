@@ -167,6 +167,7 @@ const HomePage = () => {
         return <div className="loading">Carregando...</div>;
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pagina, limit]);
 
   const filters = () => {
