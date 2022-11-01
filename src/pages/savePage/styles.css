@@ -1,0 +1,30 @@
+#update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 5rem;
+}
+#update .form {
+    background-color: rgb(245, 246, 247);
+    width: 100%;
+    max-width: 480px;
+    padding: 0.5rem;
+}
+#update .field label {
+    display:  block;
+}
+
+#update .field {
+    padding-bottom: 1.5rem;
+}
+
+#update .field input {
+    width: 90%;
+}
+
+#update .actions {
+    text-align: center;
+    padding: 30px;
+}

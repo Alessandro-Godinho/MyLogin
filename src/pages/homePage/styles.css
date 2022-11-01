@@ -1,0 +1,34 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    min-height: 9vh;
+    padding: 0.2rem;
+}
+
+ #header .botao {
+    width: 16%;
+    margin: 0.5rem;
+}
+
+#header .botao2 {
+    width: 21%;
+    margin: 0.5rem;
+}
+ .paginacao {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    justify-content: center;
+    padding: 10px;
+    
+}
+ .paginacao #limit{
+    padding: 15px 
+    10px 5px;
+    color: black;
+    font-weight: bold;
+
+}
+
