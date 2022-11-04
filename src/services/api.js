@@ -8,12 +8,22 @@ export const api = axios.create({
 export const createSession = async (usuario, senha) => {
     const reqHeaders = {
         'headers': {
-            'Access-Control-Allow-Headers': 'x-access-token',
-            'X-WP-Nonce': 'my-wp-nonce-here',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, GET',
+            'Access-Control-Allow-Headers': '*',
+            'Access-Control-Max-Age': '86400',
+            
             'x-access-token': api.defaults.headers.Authorization,
         }
     }    
-    return api.post("/login", {usuario, senha}, reqHeaders)
+
+    const reqData = {
+        usuario,
+        senha    
+    }
+
+    return api.post(`/login/`, reqData, reqHeaders)
+
 }
 
 export const updateUser = async (_id, usuario, senha, tipo) => {
@@ -63,7 +73,7 @@ export const getSistemas = async (parametros) => {
     params.append('limit', parametros.limit)
         if(parametros.usuario) {params.append('usuario', parametros.usuario)}
         if(parametros.descricao) {params.append('descricao',parametros.descricao)}
-        if(parametros.senha) {params.append('senha',parametros.senha);}
+        if(parametros.senha) {params.append('senha',parametros.senha)}
     
     let header = {'x-access-token': api.defaults.headers.Authorization}
     return api.get("/sistemas", {params,headers:  header})
