@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const api = axios.create({
-    baseURL: "http://polar-headland-86201.herokuapp.com",   
+    baseURL: "https://polar-headland-86201.herokuapp.com",   
     
 })
 //Endpoints User
