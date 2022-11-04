@@ -1,7 +1,7 @@
 # MyLogin
 Sistema de Login em React integrado com BackEnd
 
-<li>react  
+<li>react js 
 <li>paginacao
 <li>login criptografado
 <li>filtros de busca
