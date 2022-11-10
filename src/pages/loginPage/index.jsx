@@ -52,7 +52,7 @@ import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
             </div>
             <div className="actions">
             <Button type="submit" variant="contained" endIcon={<LoginIcon />}>
-            Entrar
+            ENTRAR POR FAVOR
             </Button>
             </div>
         </form>
